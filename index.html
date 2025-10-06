@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Rhinoplasty (Nose Surgery) Clinic</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar-logo">LOGO</div>
+      <button class="navbar-btn">Contact Us</button>
+    </nav>
+
+    <!-- Image Header -->
+    <div class="image-header">
+      <div class="image-header-text">
+        Transformation Through Rhinoplasty<br />
+        <span style="font-size: 1.1rem; color: #ffb36c; font-weight: 400"
+          >Nose Reshaping & Enhancement</span
+        >
+      </div>
+    </div>
+
+    <div class="section">
+      <!-- Description -->
+      <div class="section-title">What is Rhinoplasty?</div>
+      <div class="description">
+        Rhinoplasty, also known as a nose job, is a surgical procedure to change
+        the shape, size, or proportions of the nose for cosmetic or functional
+        reasons. Whether you’re seeking to improve facial harmony or address
+        breathing difficulties, our clinic combines advanced techniques with
+        personalized care, ensuring you achieve the refined, natural-looking
+        results you desire. <br> <br>
+        From subtle refinements to comprehensive reshaping, each procedure is tailored to complement your unique facial structure and aesthetic goals. Our experienced surgeons prioritize both form and function, using the latest technology to deliver results that enhance your confidence while maintaining a balanced, natural appearance. <br> <br>With a focus on patient comfort, safety, and satisfaction, we guide you through every step of your rhinoplasty journey—from consultation to recovery—with expert support and compassionate care.
+      </div>
+
+      <!-- Before and After Photos -->
+      <div class="section-title">Before &amp; After Results</div>
+      <!-- Swiper main container -->
+      <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="./majayan.webp" alt="Slide 1" /></div>
+      <div class="swiper-slide"><img src="./ust-1.webp" alt="Slide 2" /></div>
+      <div class="swiper-slide"><img src="./majayan.webp" alt="Slide 3" /></div>
+      <div class="swiper-slide"><img src="./ust-1.webp" alt="Slide 4" /></div>
+    </div>
+
+    <!-- Pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- Navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+
+      <!-- FAQ -->
+      <div class="faq-section">
+        <div class="faq-title">Frequently Asked Questions</div>
+        <div class="faq">
+          <button class="faq-q">What is rhinoplasty?</button>
+          <div class="faq-a">
+            A surgical procedure to reshape or enhance the nose for aesthetic or
+            medical reasons.
+          </div>
+        </div>
+        <div class="faq">
+          <button class="faq-q">How long is recovery?</button>
+          <div class="faq-a">
+            Initial swelling reduces in 2 weeks, but final results settle over
+            6-12 months.
+          </div>
+        </div>
+        <div class="faq">
+          <button class="faq-q">Is the procedure painful?</button>
+          <div class="faq-a">
+            Discomfort can occur, but pain is usually mild and controlled with
+            medication.
+          </div>
+        </div>
+        <div class="faq">
+          <button class="faq-q">Are results permanent?</button>
+          <div class="faq-a">
+            Yes, results are long-lasting, but aging and lifestyle can affect
+            the nose’s appearance over time.
+          </div>
+        </div>
+        <div class="faq">
+          <button class="faq-q">How much does rhinoplasty cost?</button>
+          <div class="faq-a">
+            Costs vary depending on procedure complexity and location. Please
+            contact us for a consultation.
+          </div>
+        </div>
+      </div>
+
+      <!-- Address -->
+      <div class="address-section">
+        <b>Clinic Address:</b><br />
+        123 Harmony Ave, 3rd Floor<br />
+        New Delhi, DL 110001<br />
+        <b>Hours:</b> Mon–Sat, 10:00 AM – 7:00 PM
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="footer-logo">LOGO</div>
+      <button class="footer-btn">Contact Me</button>
+      <div style="margin-top: 8px; font-size: 0.98rem; color: #999">
+        &copy; 2025 Advanced Rhinoplasty Clinic. All rights reserved.
+      </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- FAQ JS -->
+    <script>
+      document.querySelectorAll(".faq-q").forEach((btn) => {
+        btn.addEventListener("click", function () {
+          this.classList.toggle("active");
+          const answer = this.nextElementSibling;
+          answer.classList.toggle("open");
+        });
+      });
+
+    const swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+        autoplay: {
+          delay: 3000,
+            disableOnInteraction: false,
+        },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+
+      // Responsive (always 1 per view, can expand later)
+      breakpoints: {
+        768: { slidesPerView: 1 },
+        1024: { slidesPerView: 1 },
+      },
+    });
+    </script>
+  </body>
+</html>

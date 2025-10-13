@@ -260,9 +260,11 @@ body {
     gap: 1.5em;
   }
   .navbar{
+    place-content: center;
     padding: 18px 20px;
   }
   .navbar-logo{
+    text-align: center;
     font-size: 16px;
   }
   .footer-image{

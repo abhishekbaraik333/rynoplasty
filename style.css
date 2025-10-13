@@ -23,7 +23,7 @@ body {
   align-items: center;
   font-weight: 700;
   font-size: 1.7rem;
-  color: #fff;
+  color: var(--color-accent);
   letter-spacing: 2px;
 }
 
@@ -261,6 +261,9 @@ body {
   }
   .navbar{
     padding: 18px 20px;
+  }
+  .navbar-logo{
+    font-size: 16px;
   }
   .footer-image{
     width: 150px;
